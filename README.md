@@ -7,4 +7,5 @@ If you are on Ubuntu or Ubuntu-derived Distro, enable Universe repositories in t
   <pre>sudo apt-get update</pre>
   <pre>sudo apt-get install -y auto-multiple-choice && auto-multiple-choice</pre>
   
-Then choose the folder with my template and change the source file.
+Place <pre>AMC_SASh_img</pre> folder of the project into <pre>/home/{your_account_name}/MC-Projects</pre> or any other folder.
+In the programme press <b>OPEN</b> and choose the folder with my template. Now you can change the source file.
