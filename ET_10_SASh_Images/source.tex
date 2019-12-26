@@ -1,0 +1,127 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[box,completemulti,separateanswersheet]{automultiplechoice}
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+\begin{document}
+
+\hfill \namefield{\fbox{[5]
+\begin{minipage}{.5\linewidth}
+Firstname and lastname:
+
+\vspace*{.5cm}\dotfill
+\vspace*{1mm}
+\end{minipage}
+}}
+
+\AMCrandomseed{1237893}
+
+\def\AMCformQuestion#1{\vspace{\AMCformVSpace}\par {\sc Question #1:} }
+
+\setdefaultgroupmode{withoutreplacement}
+
+\element{general}{
+\begin{question}{prez}
+Q1?
+\begin{choices}
+\correctchoice{Correct}
+\wrongchoice{wrong}
+\wrongchoice{wrong}
+\wrongchoice{wrong}
+\end{choices}
+\end{question}
+}
+
+\element{general}{
+\begin{questionmult}{pref}
+Q2 multiple correct?
+\begin{choices}
+\correctchoice{Correct}
+\wrongchoice{wrong}
+\correctchoice{Correct}
+\end{choices}
+\end{questionmult}
+}
+
+\element{general}{
+
+\begin{question}{nb-ue}
+\\
+\vspace*{1cm}
+\includegraphics[width=4cm]{image}\\
+Q3 with horizontal answers?
+\begin{choiceshoriz}
+\wrongchoice{wrong}
+\wrongchoice{wrong}
+\wrongchoice{wrong}
+\correctchoice{Correct}
+\wrongchoice{wrong}
+\end{choiceshoriz}
+\end{question}
+}
+\onecopy{10}{
+
+%%% beginning of the test sheet header:
+
+{\bf NU Final Exam}
+
+\vspace*{.5cm}
+\begin{minipage}{.4\linewidth}
+\large\bf Jan. 1st, 2020
+\end{minipage}
+
+\begin{center}\bf
+Duration : 5 minutes
+
+\end{center}
+\vspace{3ex}
+
+%%% end of the header
+
+\insertgroup{general}
+
+\clearpage
+
+\AMCformBegin
+
+%%% beginning of the answer sheet header
+
+
+{
+    	\AMCcode{etu}{9}
+	\begin{minipage}[b]{6.5cm}
+	
+	$\leftarrow{}$\hspace{0pt plus 1cm} please encode your student number in the boxes to the left,
+	and write your first and last names below.$\downarrow{}$\hspace{0pt plus 1cm} \vspace*{.5cm}
+\vspace{3ex}
+\hfill\namefield{\fbox{    
+    \begin{minipage}{.9\linewidth}
+
+      First name and last name:
+      
+      
+      \vspace*{.5cm}\dotfill
+      \vspace*{0.5mm}
+    \end{minipage}
+  }}\hfill\vspace{5ex}\end{minipage}\hspace*{\fill}
+}
+
+\begin{center}
+\bf\Large Answers must be given exclusively on this sheet:
+answers given on the other sheets will be ignored.
+\end{center}
+
+%%% end of the answer sheet header
+
+\AMCform
+
+
+\clearpage
+
+}
+
+
+\end{document}
+
